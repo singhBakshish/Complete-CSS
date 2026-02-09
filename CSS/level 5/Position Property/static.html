@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Position Property</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .box{
+            width: 50px;
+            margin:5px;
+            height: 50px;
+            background-color: blueviolet;
+        }
+        #box1{
+            position:static;
+            /* ye by default behaviour hota hai (position->static) */
+        }
+        #box2{
+            position:relative;
+            top:10px;
+            left:20px;
+            /* relative position relative to its original position hoti hai yaani ye top se 10px pe aur  left se 20 px ki doori pe aajaega from its origiinal pos. */
+        }
+        #box3{
+            position:absolute;
+            top:10px;
+            /* absolute position page chodh ke halki si upar level pe maani jaati hai. yaani ye slide ho skti hai on all other boxes aur ye from top left of page se ya nearest parent ki position ke respect mein hoti hai.*/
+        }
+        #box4{
+            position:fixed;
+            top:10px;
+            right:50px;
+            /* ye position box4 ki top left se fixed hai jo ki even on scrolling the page bhi whi pe rahega...(similar to absolute parr ye scroll pe bhi whi rahega) */
+
+
+            /* position: absolute
+                ↓
+                nearest parent jiska position ≠ static
+                ↓
+                top / left usi se measure honge
+                ↓
+                agar parent nahi mila → viewport
+            */
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">Box1</div>
+    <div id="box2" class="box">Box2</div>
+    <div id="box3" class="box">Box3</div>
+    <div id="box4" class="box">Box4</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div><div class="box">Box</div><div class="box">Box</div><div class="box">Box</div><div class="box">Box</div><div class="box">Box</div><div class="box">Box</div><div class="box">Box</div>
+    <div class="box">Box</div><div class="box">Box</div><div class="box">Box</div><div class="box">Box</div><div class="box">Box</div><div class="box">Box</div><div class="box">Box</div><div class="box">Box</div>
+    <div class="box">Box</div><div class="box">Box</div><div class="box">Box</div><div class="box">Box</div><div class="box">Box</div><div class="box">Box</div><div class="box">Box</div><div class="box">Box</div>
+    <div class="box">Box</div><div class="box">Box</div><div class="box">Box</div><div class="box">Box</div><div class="box">Box</div><div class="box">Box</div><div class="box">Box</div><div class="box">Box</div>
+</body>
+</html>

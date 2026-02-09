@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Display None</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .box{
+            height:100px;
+            width:100px;
+            margin:5px;
+            background-color: aquamarine;
+            display:inline-block;
+        }
+        #box1{ 
+            display:none;
+            /* display none and visibility hidden are different */
+
+            /* display none-> box1 apni jagah bhi chodh dega aur hat jaega poora */
+
+            /* visibility->none mein box1 hat to jaega par uska container wha rahega hi rahega...(yaani jagah to khali ho jaegi par box2 aage shift ni hoga.) */
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">Box1</div>
+    <div id="box2" class="box">Box2</div>
+    <div id="box3" class="box">Box3</div>
+</body>
+</html>
