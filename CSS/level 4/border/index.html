@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Border Property</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .pad{
+            height:50px;
+            width:50px;
+            padding:5px;
+            margin:5px;
+            padding:5px;
+        }
+        #first{
+            border:2px solid red;
+            border-radius: 7px;
+            box-sizing:border-box;
+            background-color: slateblue;
+        }
+        #second{
+            border:2px dashed seagreen;
+            box-sizing:border-box;
+            background-color: orange;
+        }
+        /* border , content , padding sab andar se maani jaengi aur margin bahar se count hota hai( matlab box ki height width mein border+content+padding) count hogi...*/
+
+        /* border box mein ye hota hai ki agar hegiht aur width 50px aur 50px define hai to content + border+padding sab milake 50 px hi max rahegi. aur content box (box sizing) ka matlab ki content ki size to 50 hogi paddding aur border ki alag se add hogi. recommended is border box(sab kuch adjust ho jaata hai.) */
+    </style>
+</head>
+<body>
+    <div id="first" class="pad">First</div>
+    <div id="second" class="pad">Second</div>
+</body>
+</html>
