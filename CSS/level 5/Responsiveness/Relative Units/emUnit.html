@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Percentage Relative Unit</title>
+    <Style>
+        body{
+            font-size:100px;
+        }
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        #first{
+            background-color: blue;
+            height:200px;
+            width:200px;
+            font-size:20px;
+            color:orange;
+        }
+        #second{
+            background-color: aqua;
+            width:50%;
+            height:30%;
+            font-size:1.3em;
+            /* jaise hi first wale ka size change hoga ye uska 1.3 percent se change hojaega...(1 em is considered as parent font size (by default.)) */
+        }
+    </Style>
+</head>
+<body>
+    Body
+    <div id="first">
+        First Div
+        <div id="second">Second Div</div>
+    </div>
+</body>
+</html>

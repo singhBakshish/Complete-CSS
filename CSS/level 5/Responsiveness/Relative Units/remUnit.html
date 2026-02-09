@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>REM DISPLAY PROP.</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            font-size:10px;
+        }
+        #first{
+            height:100px;
+            width:200px;
+            background-color: aqua;
+            font-size:10px;
+            color:blueviolet;
+        }
+        #second{
+            height:60%;
+            width:30%;
+            background-color: orange;
+            font-size:1.5rem;
+            color:white;
+            /* diff b/w rem and em yhi hai ki em mai apne parent ke respect mein chize change hoti hai.
+            and rem mein apne root ke hisaab se chize change hoti hai. */
+        }
+    </style>
+</head>
+<body>
+    body text
+    <div id="first">
+        First Div
+        <div id="second">Second Div</div>
+    </div>
+</body>
+</html>
